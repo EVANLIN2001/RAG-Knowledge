@@ -31,5 +31,17 @@
 - **語意嵌入**：sentence-transformers（MiniLM-L6-v2）  
 - **向量檢索**：scikit-learn NearestNeighbors  
 - **大語言模型**：Gemini 2.0 Flash
-- **使用者介面**：Gradio  
-- **環境變數管理**：python-dotenv  
+- **使用者介面**：Gradio
+
+## 系統架構概覽
+
+```text
+使用者輸入問題
+        ↓
+ [語意向量化]
+        ↓
+與向量庫做 KNN 檢索（取 Top-K chunk）
+        ↓
+將相關段落作為 context 串進 Gemini prompt
+        ↓
+      Gemini 回答生成
