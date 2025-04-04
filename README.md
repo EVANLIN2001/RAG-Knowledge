@@ -42,7 +42,7 @@
         ↓
   文字斷句切分成 chunk（nltk）
         ↓
-  每段內容進行語意嵌入（MiniLM）
+  每段內容進行語意嵌入（MiniLM-L6-v2）
         ↓
   建立向量索引（NearestNeighbors）
         ↓
@@ -53,3 +53,6 @@
   將段落作為 context 串進 Gemini prompt
         ↓
           Gemini 回答生成
+
+
+## 本專案結合 PDF 文件處理、語意嵌入、向量檢索與 Gemini 模型應用，架構清晰、模組化程度高，適合作為 RAG 技術在文件問答場景中的實作入門範例。
