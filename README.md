@@ -1,6 +1,6 @@
 # 限定知識機器人
 
-本專案是一套使用 **Python**、**Gradio** 與 **Gemini API** 打造的文件問答應用。透過向量檢索（RAG）技術，可上傳多份 PDF 文件，自動斷句、嵌入並建構知識庫，讓使用者針對文件內容進行自然語言提問，並由 Gemini 模型產出精準回應。
+本專案是一套使用 **Python**、**Gradio** 與 **Gemini** 打造的文件問答應用。透過向量檢索（RAG）技術，可上傳多份 PDF 文件，自動斷句、嵌入並建構知識庫，讓使用者針對文件內容進行自然語言提問，並由 Gemini 模型產出精準回應。
 
 ## 核心功能說明
 
@@ -22,4 +22,14 @@
 ### Gradio UI + 深色主題介面
 - 支援多 PDF 上傳與即時問答  
 - 可調整 K 值影響回覆精準度  
-- 深色主題設計，提升視覺與可讀體驗  
+- 深色主題設計，提升視覺與可讀體驗
+
+## 技術棧
+- **語言**：Python  
+- **PDF 處理**：PyMuPDF  
+- **文本切分**：nltk  
+- **語意嵌入**：sentence-transformers（MiniLM-L6-v2）  
+- **向量檢索**：scikit-learn NearestNeighbors  
+- **大語言模型**：Gemini 2.0 Flash
+- **使用者介面**：Gradio  
+- **環境變數管理**：python-dotenv  
