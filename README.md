@@ -36,12 +36,20 @@
 ## 使用流程概覽
 
 ```text
-使用者輸入問題
+使用者上傳 PDF 文件
         ↓
- [語意向量化]
+  PDF 每頁擷取文字（PyMuPDF）
         ↓
-與向量庫做 KNN 檢索（取 Top-K chunk）
+  文字斷句切分成 chunk（nltk）
         ↓
-將相關段落作為 context 串進 Gemini prompt
+  每段內容進行語意嵌入（MiniLM）
         ↓
-      Gemini 回答生成
+  建立向量索引（NearestNeighbors）
+        ↓
+使用者輸入問題 → 轉換為語意向量
+        ↓
+  檢索最相關的 Top-K chunk
+        ↓
+  將段落作為 context 串進 Gemini prompt
+        ↓
+          Gemini 回答生成
