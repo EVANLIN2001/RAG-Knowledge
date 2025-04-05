@@ -2,7 +2,7 @@
 
 本專案使用 **Python**、**Gradio** 與 **Gemini** 打造的文件問答應用。透過向量檢索（RAG）技術，可上傳多份 PDF 文件，自動斷句、嵌入並建構知識庫，讓使用者針對文件內容進行自然語言提問，並由 Gemini 模型產出精準回應。
 
-https://github.com/user-attachments/assets/a399cd86-b93a-4e7b-8017-7c036f1568a9
+https://github.com/user-attachments/assets/e8eafb1a-a1b6-46bb-9449-0ee4d596f45b
 
 ## 使用流程概覽
 
