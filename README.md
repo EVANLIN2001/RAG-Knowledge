@@ -6,6 +6,8 @@
 
 <img src="https://github.com/EVANLIN2001/RAG-Knowledge/blob/main/image/%E6%88%AA%E5%9C%96%202025-04-04%20%E4%B8%8B%E5%8D%885.41.24.png" alt="Demo 1" width="800"><br>
 
+Uploading 限定知識機器人_Demo影片.mov…
+
 ## 使用流程概覽
 
 ```text
